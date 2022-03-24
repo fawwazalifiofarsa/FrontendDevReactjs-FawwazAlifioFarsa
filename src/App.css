@@ -52,6 +52,7 @@ h4{
 }
 
 .card .btn{
+  font-weight: 500;
   border-radius: 2px;
   background-color: #002b55;
   height: 40px;
@@ -62,6 +63,16 @@ h4{
 .filter{
   font-weight: 500;
   margin-right: 12px;
+}
+
+.text-center .btn{
+  font-weight: 600;
+  border-color: #002b55;
+  border-radius: 2px;
+  background-color: white;
+  height: 40px;
+  font-size: 10pt;
+  color: #002b55;
 }
 
 .contents tr td{
@@ -79,4 +90,23 @@ h4{
 
 .checkbox{
   margin: 0 10px 0 0;
+}
+ .modal-content h5{
+   font-weight: 700;
+ }
+
+.modal-content: {
+  border: 0;
+  borderRadius: 4px;
+  bottom: auto;
+  minHeight: 10rem;
+  left: 50%;
+  padding: 2rem;
+  position: fixed;
+  right: auto;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  minWidth: 20rem;
+  width: 80%;
+  maxWidth: 60rem;
 }

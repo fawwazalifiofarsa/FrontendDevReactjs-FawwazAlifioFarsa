@@ -8,6 +8,7 @@ class Restaurants extends Component {
     constructor(){
         super()
         this.state = {
+            visible: 8,
             list: [
                 {
                     name:"Very Long Name Restaurants Number 1 In List", 
@@ -65,6 +66,34 @@ class Restaurants extends Component {
                     isOpen:true,
                     rating:"★★★☆☆"                
                 },
+                {
+                    name:"Restaurant 9", 
+                    categories:"Italian",
+                    price: "$",
+                    isOpen:false,
+                    rating:"★★★☆☆"                
+                },
+                {
+                    name:"Restaurant 10", 
+                    categories:"American",
+                    price: "$$$",
+                    isOpen:true,
+                    rating:"★★★★☆"                
+                },
+                {
+                    name:"Restaurant 11", 
+                    categories:"American",
+                    price: "$$",
+                    isOpen:true,
+                    rating:"★★★☆☆"                
+                },
+                {
+                    name:"Restaurant 12", 
+                    categories:"Steakhouses",
+                    price: "$$$",
+                    isOpen:false,
+                    rating:"★★★★☆"                
+                },
             ],
             action: "",
             name: "",
@@ -79,7 +108,6 @@ class Restaurants extends Component {
     }   
 
     Detail = (item) => {
-        // menampilkan komponen modal
         this.setState({
             modal: true,
             name: item.name,
@@ -88,6 +116,12 @@ class Restaurants extends Component {
             isOpen: item.isOpen,
             rating: item.rating,
             selectedItem: item
+        })
+    }
+
+    showMoreItems(){
+        this.setState({
+            visible: this.state.visible+4
         })
     }
 
@@ -144,7 +178,7 @@ class Restaurants extends Component {
                 <div className="contents">
                     <h4>All Restaurants</h4>
                     <div className="row">
-                        { this.state.restaurants.map( (item, index) => (
+                        { this.state.restaurants.slice(0, this.state.visible).map( (item, index) => (
                             <Card
                             name={item.name}
                             categories={item.categories}
@@ -155,11 +189,14 @@ class Restaurants extends Component {
                             />
                         )) }
                     </div>
+                    <div className="text-center mb-5">
+                        <button className="btn col-5" onClick={() => this.showMoreItems()}>LOAD MORE</button>
+                    </div>
                 </div>
-                <Modal show={this.state.modal} onHide={this.closeModal}>
+                <Modal show={this.state.modal} onHide={this.closeModal} >
                     <div className="modal-content">
                         <div className="modal-header">
-                            {this.state.name}
+                            <h5>{this.state.name}</h5>
                             <button className="btn btn-danger" onClick={() => this.Close()}>
                                 X
                             </button>
