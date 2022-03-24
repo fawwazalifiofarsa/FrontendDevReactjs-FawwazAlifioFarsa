@@ -7,7 +7,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm install react-router-dom@5.2.0 bootstrap@5.1.3 install react-bootstrap@2.2.1 jquery@3.6.0`
+
 ### `npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons`
+
 ### `npm start`
 
 Runs the app in the development mode.\
