@@ -11,19 +11,20 @@ class card extends React.Component{
     }
     render(){
         var isGreen = this.state.isGreen
+        var isOpen
         const categories =  this.props.categories.toUpperCase();
-        if(this.props.isOpen == true){
-            var isOpen = "OPEN NOW";
+        if(this.props.isOpen === true){
+            isOpen = "OPEN NOW";
             isGreen = true;
         }else{
-            var isOpen = "CLOSED";
+            isOpen = "CLOSED";
             isGreen = false;
         }
         return (
             <div className="col-lg-3 col-sm-12 px-2 pb-5">
                 <div className="card border-0 card-body p-1">
                     <img className="card-img-top bg-black bg-cover w-10" 
-                    height="200" />
+                    height="200" alt=""/>
                     <h5>
                         { this.props.name }<br/>
                         {this.props.rating}

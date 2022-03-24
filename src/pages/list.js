@@ -1,4 +1,4 @@
-import React, {Component, setState} from "react";  
+import React, {Component} from "react";  
 import Card from "../components/card";
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
