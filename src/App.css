@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+
+*{
+  letter-spacing: -0.4px;
+  font-family: 'Quicksand', sans-serif;
+  zoom: 99%;
+}
+
+.contents{
+  margin: 0 100px;
+}
+
+header h1{
+  font-weight: 500;
+  color: rgb(30, 30, 30);
+}
+
+header p{
+  padding: 10px 0 10px 0;
+  font-weight: 500;
+  color: rgb(110, 110, 110);
+}
+
+h4{
+  padding: 30px 0 15px 0;
+}
+
+.card{
+  height: 100%;
+}
+
+.card h5{
+  padding: 15px 0 5px 0;
+  font-weight: 700;
+}
+
+.card h6{
+  font-size: 9.5pt;
+  color: rgb(110, 110, 110);
+  font-weight: 600;
+}
+
+.card tr .left{
+  float: left;
+  text-align: left;
+}
+
+.card tr .right{
+  float: right;
+  text-align: right;
+}
+
+.card .btn{
+  border-radius: 2px;
+  background-color: #002b55;
+  height: 40px;
+  font-size: 10pt;
+  color: white;
+}
+
+.filter{
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.contents tr td{
+  font-weight: 600;
+}
+
+.border-bottom{
+  margin-left: 20px;
+}
+
+.border-0{
+  font-weight:600;
+  padding: 0 40px 0 0;
+}
+
+.checkbox{
+  margin: 0 10px 0 0;
+}
