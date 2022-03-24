@@ -203,6 +203,9 @@ class Restaurants extends Component {
                         </div>
                         <div className="modal-body">
                             
+                            <h5>{this.state.rating}</h5>
+                            <h6>{this.state.categories} • {this.state.price}</h6>
+                            <h6>{this.state.isOpen}</h6>
                         </div>
                     </div>
                 </Modal>
